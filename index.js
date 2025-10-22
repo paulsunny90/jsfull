@@ -278,42 +278,89 @@ let arr =[1,5]
 // console.log(B)
 
 
-let todo=[];
-while(true){
-let input= prompt("enter input value\n[1] add task\n[2] display task\n [3] Edit task \n [4] Delete task \n [5] exit");
-//add
-if(input==1){
-    let task=prompt("enter your task");
-    todo.push(task);    
-} 
-//display  
-else if(input=="2"){
-    str=``
-    for(let i=0;i<todo.length;i++){
-        str+= `[${i+1}]${todo[i]}\n`;
-    }
-    alert(str);
-}
-//edit
-else if(input=="3"){str=``
-    for(const[index,task] of todo.entries()){
-        str+= `[${index+1}]${task}\n`;
-    }``
-    let edit=prompt(`${str}\n enter task number to edit`).split(",");
-    todo[edit[0]-1]=edit[1];
-}
-//delete
-else if(input=="4"){str=``
-    for(const[index,task] of todo.entries()){
-        str+= `[${index+1}]${task}\n`;
-    }
-    let Delete =prompt(`${str}\n enter task number to delete`)
-    todo.splice(Delete-1,1)
-}
+// let todo=[];
+// while(true){
+// let input= prompt("enter input value\n[1] add task\n[2] display task\n [3] Edit task \n [4] Delete task \n [5] exit");
+// //add
+// if(input==1){
+//     let task=prompt("enter your task");
+//     todo.push(task);    
+// } 
+// //display  
+// else if(input=="2"){
+//     str=``
+//     for(let i=0;i<todo.length;i++){
+//         str+= `[${i+1}]${todo[i]}\n`;
+//     }
+//     alert(str);
+// }
+// //edit
+// else if(input=="3"){str=``
+//     for(const[index,task] of todo.entries()){
+//         str+= `[${index+1}]${task}\n`;
+//     }``
+//     let edit=prompt(`${str}\n enter task number to edit`).split(",");
+//     todo[edit[0]-1]=edit[1];
+// }
+// //delete
+// else if(input=="4"){str=``
+//     for(const[index,task] of todo.entries()){
+//         str+= `[${index+1}]${task}\n`;
+//     }
+//     let Delete =prompt(`${str}\n enter task number to delete`)
+//     todo.splice(Delete-1,1)
+// }
 
-//exit  
-else if(input=="5"){ 
-    break;
-}
-else("invalid input");
-}
+// //exit  
+// else if(input=="5"){ 
+//     break;
+// }
+// else("invalid input");
+// }
+
+//febonacci
+// let n1=0 , n2=1;
+// let nextterm;
+// for(let i=0;i<=10;i++){
+//     console.log(n1)
+//     nextterm =n1+n2
+//     n1=n2
+//     n2=nextterm;
+
+// }
+
+// odd &even Number sum
+
+// let even =0;
+// let odd=0;
+// for(let i=0;i<=50;i++){
+//     if(i%2==0){
+//         even=even+i
+//     }
+//     else{
+//         odd=odd+1
+//     }
+// }
+// console.log(even)
+// console.log(odd)
+
+// let num =927;
+// let largest=0;
+
+// while(num>0){
+//     let digit=num%10;
+//     if(digit>largest){
+//         largest=digit
+//     }
+//     num=Math.floor(num/10)
+// }
+// console.log(largest)
+
+// swap to num
+// let a=10
+// let b=5
+// console.log('a+'+a,"b="+b)
+// a=a+b
+// b=a-b
+// a=a-b
+// console.log('a+'+a,"b="+b)
