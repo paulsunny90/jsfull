@@ -253,7 +253,7 @@
 
 
 
-let arr =[1,5]
+// let arr =[1,5]
 // arr.forEach(()=>{
 //     console.log(arr)
 // })
@@ -364,3 +364,132 @@ let arr =[1,5]
 // b=a-b
 // a=a-b
 // console.log('a+'+a,"b="+b)
+
+
+// let todo={}
+// while(true){
+//     let input= prompt("enter input value\n [1] add task\n x[2] add phone number\n[3] display task\n [4] Edit task \n [5] Delete task \n [6] exit");
+//     if(input==1){
+//       let name=prompt("add name")
+//       todo.push(name)
+//     }
+//     else if( input==2){
+//         let num=prompt("add phone number")
+//         todo.push(num)
+
+//     }
+
+//     else if( input===6){
+//     break
+//     }
+//      else("invalid input");
+// }
+    
+// object destructuring
+// object nested destructuring
+// array destructuring
+// array nested destructuring
+// deep copy
+// // shallow copy
+
+// const colors = ["red", "green", "blue"];
+
+// const [first, second, third] = colors;
+
+// console.log(first,second,third);
+
+// const student = {
+//   name: "John",
+//   address: {
+//     city: "Kochi",
+//     pincode: 682020
+//   }
+// };
+
+// const { address: { city, pincode, },name,} = student;
+
+// console.log(city,name);     // "Kochi"
+// console.log(pincode);  // 682020
+// console.log();
+
+
+
+// const numbers = [1, [2, 3], 4];
+
+// const [a, [b, c], d] = numbers;
+
+
+// const person1 = {
+//   name: "Paul",
+//   address: { city: "Kochi" }
+// };
+
+// // 🪞 Shallow copy using spread (...)
+// const person2 = { ...person1 };
+
+// // Change inner object
+// person2.address.city = "TVM";
+
+// console.log(person2.address.city); // "TVM" 😢
+
+// console.log(a, b, c, d);  // 1 2 3 4
+
+
+// const person1 = {
+//   name: "Paul",
+//   address: { city: "Kochi" }
+// };
+
+// // 🌊 Deep copy using JSON method
+// const person2 = JSON.parse(JSON.stringify(person1));
+
+// // Change inner object
+// person2.address.city = "TVM";
+
+// console.log(person2.address.city); // "Kochi" ✅
+
+
+// let obj =[{name:"paul",age:"55","city":"ernakulam"},{name:"paul",age:"55","city":"ernakulam"}]
+// let jsonobj=JSON.stringify(obj)
+// console.log(obj)
+// console.log(jsonobj)
+// let obj1=JSON.parse(jsonobj)
+// console.log(obj1)
+
+
+// let a=10
+// let b=a
+// b+=1
+// console.log(a,b)
+
+
+// a=[100]
+// b=[...a]
+// b[0]+=1
+// console.log(a)
+// console.log(b)
+
+
+function outerfun( ){
+   let outervwr ="hellow iam outer"
+
+   function innerfun(){
+    console.log(outervwr)
+   }
+   return innerfun
+}
+const example=outerfun();
+console.dir(example)
+console.log(example)
+example()
+
+
+
+function createcount(){
+  let count=0
+  function counts(){
+    count+=1
+    console.log(count)
+  }
+  return counts
+}
